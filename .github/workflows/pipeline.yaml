@@ -19,7 +19,7 @@ jobs:
           cache: 'npm'           # Highly recommended: speeds up installs dramatically
 
       - name: Install dependencies
-        run: npm ci                # Better than `npm install` in CI (reproducible installs)
+        run: npm install                # Better than `npm install` in CI (reproducible installs)
 
       - name: Run Tests
         run: npm test
